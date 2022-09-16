@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block add_css%}
+    <link rel="stylesheet" href="{% static 'Pythagoras_matrix/css/index.css' %}">
+{% endblock %}
+
+
+{% block title%}
+    Pythagoras Matrix
+{% endblock %}
+
+
+{% block content%}
+    <h1>variable info:</h1>
+    <h2>{{ info }}</h2>
+{#    {% include 'includes/navbar.html' only %}#}
+
+{% endblock %}
