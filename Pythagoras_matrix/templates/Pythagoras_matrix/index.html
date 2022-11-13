@@ -13,8 +13,47 @@
 
 
 {% block content%}
-    <h1>variable info:</h1>
-    <h2>{{ info }}</h2>
+    <h1>{{ info }}</h1>
 {#    {% include 'includes/navbar.html' only %}#}
+
+
+  <tbody>
+  <div>
+    <form action="" method="post">
+
+        {% csrf_token %}
+        <h2>Name:</h2>
+        {{  form.name }}
+        <br>
+        <h2>Birthday:</h2>
+        {{  form.date }}
+
+        <div>
+
+           <p><button type="submit">Send</button></p>
+        </div>
+    </form>
+</div>
+
+
+    <table>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+
+  </tbody>
+</table>
 
 {% endblock %}
